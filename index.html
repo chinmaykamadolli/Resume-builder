@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Resume Builder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo-wrap">
+        <img class="logo-img" src="images/logo.png" alt="logo">
+        <div class="logo-text">
+          <div class="company-name">COMPANY</div>
+          <div class="company-tagline">business tagline</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Our Services</a>
+        <a href="#">Pricing</a>
+        <a href="#">FAQ</a>
+      </nav>
+      <a class="btn-primary" href="#">Get A Quote</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-container">
+
+      <!-- Left text -->
+      <div class="hero-text">
+        <h1>
+          <span>Your Resume</span><br>
+          <span class="highlight">Deserves A Yes</span><br>
+          <span>Let’s Make It Happen</span>
+        </h1>
+        <p class="lead">
+          If your resume isn’t getting responses, it’s time for an upgrade.
+          Get an ATS-optimized resume crafted by HR experts to help you land more interviews.
+          Our resumes are designed to get your foot in the door and place your name at the top of the shortlist.
+        </p>
+        <div class="hero-buttons">
+          <a href="#whatyouget" class="btn-secondary">Resume Packages</a>
+          <a href="#" id="contactBtn" class="btn-tertiary">Contact Us</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="circle-bg"></div>
+        <img class="girl" src="images/download.png" alt="girl">
+
+        <!-- BADGES -->
+        <div class="badge rating-badge">
+          <div class="rating-number">4.9</div>
+          <div class="stars">⭐ ⭐ ⭐ ⭐ ⭐</div>
+          <div class="rating-label">Instructor Rating</div>
+        </div>
+
+        <div class="badge resumes-badge">
+          <div class="resumes-number">260+</div>
+          <div class="resumes-label">Online Resumes Created</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="what-you-get" id="whatyouget">
+    <div class="container">
+
+      <div class="section-label">WHAT YOU GET</div>
+
+      <h2 class="applicant-line">
+        You're Not Just Another Applicant And Your Resume Shouldn't Look Like One
+      </h2>
+
+      <div class="cards">
+        <div class="card">
+          <img src="images/icon1.png" alt="icon1">
+          <h3>ATS Optimized Resume</h3>
+          <p>Get a keyword-optimized resume that passes ATS scans and gets recruiters’ attention.</p>
+        </div>
+        <div class="card">
+          <img src="images/icon2.png" alt="icon2">
+          <h3>Professional Formatting</h3>
+          <p>Modern, clean layouts that instantly impress hiring managers.</p>
+        </div>
+        <div class="card">
+          <img src="images/icon3.png" alt="icon3">
+          <h3>Tailored Content</h3>
+          <p>Resumes crafted to highlight your strengths and industry fit.</p>
+        </div>
+        <div class="card">
+          <img src="images/icon4.png" alt="icon4">
+          <h3>Fast Turnaround</h3>
+          <p>Receive your polished resume within 48 hours — no long delays.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MODAL -->
+  <div class="modal" id="contactModal">
+    <div class="modal-content">
+      <button class="close-btn" id="closeModal">&times;</button>
+      <h3>Contact Us</h3>
+      <form id="contactForm">
+        <input id="name" type="text" placeholder="Your Name" required>
+        <input id="email" type="email" placeholder="Your Email" required>
+        <input id="phone" type="text" placeholder="Your Phone Number" required>
+        <textarea id="message" rows="4" placeholder="Your Message"></textarea>
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div id="toast">✅ Thank you! We’ll get back to you soon.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
